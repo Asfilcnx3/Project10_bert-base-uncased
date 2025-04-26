@@ -4,12 +4,12 @@
 > Este fue el primer proyecto utilizando "transformers" para detección del lenguaje natural (en inglés en esta ocasión), Se comparó el crecimiento entre "accuracy" y "f1" en el entrenamiento de fine tunning del modelo y tokenizador "bert-base-uncased" sobre el dataset "glue". 
 
 ## English
-> In this project i used a Simple NN with 102 output layers (categories) for a multinomial classification but with "Transfer Learning" of the "IMAGENET1K_V2" model that was pretrained for image classification.
+> This was my first project using "transformers" library for NLP (Natural Lenguage Processing) tasks in english, it was compared the evolution between "accuracy" and "f1" in the fine-tuning using the tokenizer and model "bert-base-uncased" in the "glue" dataset.
 
 ## Descripción / Description
 > - Es un proyecto para la comparación de métricas de medición al entrenar un modelo preentrenado como lo es "bert-base-uncased" usando el entrenamiento manual en 5 épocas de evaluación. 
 > 
-> - Se utilizó PyTorch como herramienta principal y el set de datos "Glue" que viene de `load_dataset from datasets`.
+> - Se utilizó "transformers" como herramienta principal y el set de datos "Glue" que viene de `load_dataset from datasets`.
 > 
 > - Se Trabajó usando el tipo de evalación "clasificación de texto" usando Microsoft Research Paraphrase Corpus.
 >  
@@ -21,19 +21,17 @@
 
 > -------------------
 
-> - This is a computer vision project using torch.cuda to manually accelerate the training loop. This project is to compare the accuracy between "Fine Tuning" and "Feature Extraction" in a 102 different output categories.
+> - Is a project to compare metrics in a pretrained model like "bert-base-uncased" using manual training with 5 evaluate epochs.
 > 
-> - Using PyTorch as main tool and the "Flowers102" dataset that you can find on `torchvision.datasets`.
+> - Using transformers as main tool and the "Glue" dataset that you can find on `load_dataset from datasets`.
 > 
-> - Worked with 5 different layers of Data Augmentation and the normalize layer.
+> - Worked with "text clasification" using the Microsoft Research Paraphrase Corpus.
 > 
-> - EarlyStopping was used with 7 patience epochs.
-> 
-> - 50 total epochs for both models.
+> - 5 total train epochs.
 >
-> - BatchSize = 32
+> - BatchSize = 8 using "dataloader"
 >
-> - Worked with train, test and valid split.
+> - Worked with test and valid split.
 
 ## Tecnologías usadas / Used Technologies
 - Python (main)
@@ -48,13 +46,13 @@
 
 ## Final Results / Resultados Finales
 
-        Epoch: 1 -> Accuracy: 0.8112745098039216, F1: 0.8560747663551402
+        Epoch: 1 -> Accuracy: 0.8333333333333334, F1: 0.8790035587188612
         --------------------------------------------------------------------------------
-        Epoch: 2 -> Accuracy: 0.8651960784313726, F1: 0.9033391915641477
+        Epoch: 2 -> Accuracy: 0.8406862745098039, F1: 0.8811700182815356
         --------------------------------------------------------------------------------
-        Epoch: 3 -> Accuracy: 0.8504901960784313, F1: 0.8988391376451078
+        Epoch: 3 -> Accuracy: 0.8602941176470589, F1: 0.9008695652173913
         --------------------------------------------------------------------------------
-        Epoch: 4 -> Accuracy: 0.8602941176470589, F1: 0.8994708994708994
+        Epoch: 4 -> Accuracy: 0.8578431372549019, F1: 0.9003436426116839
         --------------------------------------------------------------------------------
-        Epoch: 5 -> Accuracy: 0.8676470588235294, F1: 0.9055944055944056
+        Epoch: 5 -> Accuracy: 0.8553921568627451, F1: 0.8987993138936535
 
